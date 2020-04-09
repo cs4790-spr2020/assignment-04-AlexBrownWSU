@@ -3,6 +3,7 @@ using System.Collections;
 using BlabberApp.DataStore.Adapters;
 using BlabberApp.Domain.Entities;
 
+
 namespace BlabberApp.Services
 {
     public class BlabService : IBlabService
@@ -36,4 +37,5 @@ namespace BlabberApp.Services
             return new Blab(msg, usr);
         }
     }
+
 }

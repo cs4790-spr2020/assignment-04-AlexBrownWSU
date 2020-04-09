@@ -1,0 +1,13 @@
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.Services.deps.json
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.Services.dll
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.Services.pdb
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.DataStore.dll
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.Domain.dll
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.DataStore.pdb
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/bin/Debug/netstandard2.0/BlabberApp.Domain.pdb
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.csprojAssemblyReference.cache
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.AssemblyInfoInputs.cache
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.AssemblyInfo.cs
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.csproj.CopyComplete
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.dll
+/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/Debug/netstandard2.0/BlabberApp.Services.pdb

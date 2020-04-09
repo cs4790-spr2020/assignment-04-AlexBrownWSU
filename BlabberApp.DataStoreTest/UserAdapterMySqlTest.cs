@@ -12,7 +12,7 @@ namespace BlabberApp.DataStoreTest
     {
         private User _user;
         private UserAdapter _harness = new UserAdapter(new MySqlUser());
-        private readonly string _email = "foobar@example.com";
+        private readonly string _email = "example@example.com";
 
         [TestInitialize]
         public void Setup()

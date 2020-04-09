@@ -10,6 +10,18 @@ namespace BlabberApp.DataStoreTest
     public class BlabAdapter_MySql_UnitTests
     {
         private BlabAdapter _harness = new BlabAdapter(new MySqlBlab());
+        private Blab _blab;
+        private readonly User _user = new User("example@example.com");
+
+        [TestInitialize]
+        public void TestInitialize() {
+            _blab = new Blab("Testing my blab out", _user);
+        }
+
+        [TestCleanup]
+        public void TestCleanup() {
+            _harness.Remove(_blab);
+        }
 
         [TestMethod]
         public void Canary()

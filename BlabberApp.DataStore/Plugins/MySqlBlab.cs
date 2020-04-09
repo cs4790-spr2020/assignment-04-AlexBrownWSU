@@ -1,3 +1,4 @@
+using System.Data.Common;
 using System;
 using System.Collections;
 using System.Data;
@@ -13,7 +14,7 @@ namespace BlabberApp.DataStore.Plugins
         MySqlConnection dcBlab;
         public MySqlBlab()
         {
-            this.dcBlab = new MySqlConnection("server=142.93.114.73;database=donbstringham;user=donbstringham;password=letmein");
+            this.dcBlab = new MySqlConnection("server=142.93.114.73;database=AlexBrownWSU;user=AlexBrownWSU;password=letmein");
             try
             {
                 this.dcBlab.Open();
