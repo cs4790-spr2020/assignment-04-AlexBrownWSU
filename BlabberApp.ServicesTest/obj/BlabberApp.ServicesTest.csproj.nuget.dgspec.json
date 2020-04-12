@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.ServicesTest/BlabberApp.ServicesTest.csproj": {}
+  },
+  "projects": {
+    "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/BlabberApp.DataStore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/BlabberApp.DataStore.csproj",
+        "projectName": "BlabberApp.DataStore",
+        "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/BlabberApp.DataStore.csproj",
+        "packagesPath": "/Users/alexbrown/.nuget/packages/",
+        "outputPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alexbrown/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj": {
+                "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.19, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj",
+        "projectName": "BlabberApp.Domain",
+        "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj",
+        "packagesPath": "/Users/alexbrown/.nuget/packages/",
+        "outputPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alexbrown/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/BlabberApp.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/BlabberApp.Services.csproj",
+        "projectName": "BlabberApp.Services",
+        "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/BlabberApp.Services.csproj",
+        "packagesPath": "/Users/alexbrown/.nuget/packages/",
+        "outputPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alexbrown/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/BlabberApp.DataStore.csproj": {
+                "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.DataStore/BlabberApp.DataStore.csproj"
+              },
+              "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj": {
+                "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.ServicesTest/BlabberApp.ServicesTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.ServicesTest/BlabberApp.ServicesTest.csproj",
+        "projectName": "BlabberApp.ServicesTest",
+        "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.ServicesTest/BlabberApp.ServicesTest.csproj",
+        "packagesPath": "/Users/alexbrown/.nuget/packages/",
+        "outputPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.ServicesTest/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alexbrown/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj": {
+                "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Domain/BlabberApp.Domain.csproj"
+              },
+              "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/BlabberApp.Services.csproj": {
+                "projectPath": "/Users/alexbrown/Desktop/BlabberApp/BlabberApp/BlabberApp.Services/BlabberApp.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

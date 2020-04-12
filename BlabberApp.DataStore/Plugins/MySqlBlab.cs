@@ -1,4 +1,3 @@
-using System.Data.Common;
 using System;
 using System.Collections;
 using System.Data;
@@ -14,7 +13,7 @@ namespace BlabberApp.DataStore.Plugins
         MySqlConnection dcBlab;
         public MySqlBlab()
         {
-            this.dcBlab = new MySqlConnection("server=142.93.114.73;database=AlexBrownWSU;user=AlexBrownWSU;password=letmein");
+            this.dcBlab = new MySqlConnection("server=142.93.114.73;database=donbstringham;user=donbstringham;password=letmein");
             try
             {
                 this.dcBlab.Open();
@@ -60,14 +59,14 @@ namespace BlabberApp.DataStore.Plugins
 
                 daBlabs.Fill(dsBlabs);
 
-                ArrayList alBlabs = new ArrayList();
+                ArrayList blabs = new ArrayList();
 
-                foreach( DataRow dtRow in dsBlabs.Tables[0].Rows)
+                foreach(DataRow dtRow in dsBlabs.Tables[0].Rows)
                 {
-                    alBlabs.Add(dtRow);
+                    blabs.Add(DataRow2Blab(dtRow));
                 }
                 
-                return alBlabs;
+                return blabs;
             }
             catch (Exception ex)
             {
@@ -110,14 +109,14 @@ namespace BlabberApp.DataStore.Plugins
 
                 daBlabs.Fill(dsBlabs);
 
-                ArrayList alBlabs = new ArrayList();
+                ArrayList blabs = new ArrayList();
 
-                foreach( DataRow dtRow in dsBlabs.Tables[0].Rows)
+                foreach(DataRow dtRow in dsBlabs.Tables[0].Rows)
                 {
-                    alBlabs.Add(dtRow);
+                    blabs.Add(DataRow2Blab(dtRow));
                 }
                 
-                return alBlabs;
+                return blabs;
             }
             catch (Exception ex)
             {
@@ -133,6 +132,21 @@ namespace BlabberApp.DataStore.Plugins
         public void Delete(IEntity obj)
         {
             Blab blab = (Blab)obj;
+        }
+        
+        private Blab DataRow2Blab(DataRow row)
+        {
+            User user = new User();
+            
+            user.ChangeEmail(row["user_id"].ToString());
+
+            Blab blab = new Blab(user);
+
+            blab.Id = new Guid(row["sys_id"].ToString());
+            blab.Message = row["message"].ToString();
+            blab.DTTM = (DateTime)row["dttm_created"];
+
+            return blab;
         }
     }
 }

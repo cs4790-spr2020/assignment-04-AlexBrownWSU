@@ -28,6 +28,7 @@ namespace BlabberApp.Services
         }
         public IEnumerable FindUserBlabs(string email)
         {
+            //return new NotImplementedException("FindUserBlabs");
             return null;
         }
 
@@ -35,6 +36,10 @@ namespace BlabberApp.Services
         {
             User usr = new User(email);
             return new Blab(msg, usr);
+        }
+
+        public Blab CreateBlab(string msg, User user) {
+            return new Blab(msg, user);
         }
     }
 

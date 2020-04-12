@@ -1,12 +1,36 @@
 ﻿@page
 @model BlabberApp.Client.Pages.FeedModel
+@using BlabberApp.Domain.Entities
+@using BlabberApp.Services
+@inject IBlabService BlabService
+@inject IUserService UserService
+
 @{
     ViewData["Title"] = "Feed";
 }
 
+<style>
+    div.border {
+        border-style: 2px solid;
+    }
+</style>
+
 <section id="main">
-    <h1>Feed</h1>
-    <div id="content">
-        All the feed content will go here!
+    <form method="post">
+        <label>Email</label>
+        <input type="email" name="emailaddress">
+        <br/>
+        <label>Message</label>
+        <input type="test" name="message">
+        <br/>
+        <input type="submit">
+    </form>
+    <h1>Blabber App Feed</h1>
+    <div class="border" id="feed"></div>
+    All the feed content will go here!
+
+    @foreach (@Blab blab in @BlabService.GetAll()) {
+        <li><b>@blab.User.Email.ToString()</b>: @blab.Message.ToString()</li>
+    }
     </div>
 </section>
